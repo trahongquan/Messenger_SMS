@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center|top"
+    android:background="@drawable/messengerbackground"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number (10 digits)"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/baseline_smartphone_24"
+        android:drawablePadding="8dp"
+        android:padding="30px"
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/whitebackground"
+        android:maxLength="10" />
+
+    <EditText
+        android:textStyle="bold"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="30px"
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Message (max 160 characters)"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="30px"
+        android:background="@drawable/whitebackground"
+        android:textColor="@color/black"
+        android:maxLength="160" />
+
+    <Button
+        android:layout_marginTop="30px"
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:onClick="sendMessage" />
+
+    <!-- Developer Information Layout -->
+    <LinearLayout
+        android:id="@+id/developerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:orientation="horizontal"
+        android:layout_margin="30px"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle_white_border"
+            android:scaleType="centerCrop"
+            android:src="@drawable/studentprofile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/blackbg"
+            android:padding="20px"
+            android:text="Developed by Utkarsh!"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
